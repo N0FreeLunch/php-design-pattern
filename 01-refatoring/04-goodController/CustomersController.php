@@ -2,7 +2,7 @@
 class CustomersController extends AbstractActionController {
   protected $customerRepository;
 
-  public function __construct($customerRepositoryInterface $repository) {
+  public function __construct(CustomerRepositoryInterface $repository) {
     $this -> $customerRepository = $repository;
   }
 
