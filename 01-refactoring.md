@@ -120,16 +120,5 @@ class CustomersController extends AbstractActionController {
 ```
 
 1. Using interface CustomerRepositoryInterface, It remove the dependency of CustomerRepository on controller, this controller do not depend on CustomerRepositoryInterface result.
-2. You can make test data freely. Using CustomerRepositoryInterface implement.
+2. You can make test data freely. Using CustomerRepositoryInterface implementation.
 3. Library upgrade do not cause changing controller. CustomerRepositoryInterface and controller is independent.
-4.
-
-## bad architecture
-```
-<h2>Customers</h2>
-<ul>
-  <?php while($customer = mysql_fetch_assoc($result)): ?>
-  <li><?= $customer['name'] ?></li>
-  <?php endwhile; ?>
-</ul>
-```
