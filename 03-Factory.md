@@ -48,13 +48,39 @@ $customer = CustomerFactory::createCustomer('ACME Corp');
 1. Without instance, It is simple to use method
 2. Don't use static factory in case of outer class dependency
 
-
+## simple factory (Factory method)
+making new page
 ```
 class Document {
   public function createPage () {
-    pulbic function createPage() {
-      return new Page();
-    }
+    return new Page();
+  }
+}
+```
+
+##
+making each other page
+```
+abstract class AbstractDocument {
+  public function render () {
+    $this->addPage(1, $this -> createPage());
+  }
+
+  public function addPage(1, AbstractPage) {
+
+  }
+
+  abstract public function createPage();
+}
+```
+- render method use addPage method and createPage method
+
+##
+
+```
+class ResumeDocument extends AbstractDocument {
+  public function createPage() {
+    return new ResumePage();
   }
 }
 ```
