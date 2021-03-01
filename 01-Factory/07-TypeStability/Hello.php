@@ -3,8 +3,8 @@ class Hello
 {
   public function greeting($type)
   {
-    $ko = Facroty::getInstance($type);
-    return $ko->text();
+    $ja = Factory::getInstance($type);
+    return $ja->text();
   }
 }
 
