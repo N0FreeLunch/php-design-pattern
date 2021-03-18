@@ -1,12 +1,13 @@
 <?php
 include "Config.php";
+include "Env.php";
 
-// $obj1 = Config::getInstance();
-// $obj2 = Config::getInstance();
-// $obj3 = new Config();
-// $obj3 -> getInstance();
-// $obj4 = new Config();
-// $obj4 -> getInstance();
+$obj1 = Env::getInstance();
+$obj2 = Env::getInstance();
+$obj3 = Env::getInstance();
 
+$obj1->setting();
+$obj2->setting();
+$obj3->setting();
 
  ?>
