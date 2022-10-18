@@ -22,7 +22,7 @@
 class UsersController {
   public function indexAction() {
     $repo = new UserRepository();
-    $users = $repo -> getAll();
+    $users = $repo->getAll();
     return $users;
   }
 }

@@ -5,12 +5,12 @@ class Hello
 
   public function __construct($obj)
   {
-    $this -> korean = $obj;
+    $this->korean = $obj;
   }
 
   public function greeting()
   {
-    return $this -> korean -> text();
+    return $this->korean->text();
   }
 }
 

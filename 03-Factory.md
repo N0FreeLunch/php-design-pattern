@@ -3,16 +3,16 @@
 class CustomerFactory {
   protected $accountManagerRepo;
   public function __construct(AccountManagerRepository $repo) {
-    $this -> accountManagerRepo = $repo;
+    $this->accountManagerRepo = $repo;
   }
 
   public function createCustomer($name) {
     $customer = new Customer();
-    $customer -> setName($name);
-    $customer -> setCreditLimit(0);
-    $customer -> setStatus('pending');
-    $customer -> setAccountManager(
-      $this -> accountManagerRepo -> getRandom()
+    $customer->setName($name);
+    $customer->setCreditLimit(0);
+    $customer->setStatus('pending');
+    $customer->setAccountManager(
+    $this->accountManagerRepo->getRandom()
     );
     return $customer;
   }
@@ -32,9 +32,9 @@ static factory is made static method only
 ```
 class CustomerFactory {
   public static function createCustomer($name) {
-    $customer -> setName($name);
-    $customer -> setCreditLimit(0);
-    $customer -> setStatus('pending');
+    $customer->setName($name);
+    $customer->setCreditLimit(0);
+    $customer->setStatus('pending');
 
     return $customer;
   }

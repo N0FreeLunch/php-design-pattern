@@ -10,8 +10,8 @@ echo Config::get();
 echo Config::get();
 
 $obj = new Config();
-$obj -> set("world<br>");
-echo $obj -> get();
+$obj->set("world<br>");
+echo $obj->get();
 echo Config::get();
 
 

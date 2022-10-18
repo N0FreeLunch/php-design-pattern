@@ -46,7 +46,7 @@ class CustomersController {
 ```
 <h2>Customers</h2>
 <ul>
-  <?php foreach ($this -> customers as $customer): ?>
+  <?php foreach ($this->customers as $customer): ?>
     <li><?= $customer['name'] ?></li>
   <?php endforeach; ?>
 </ul>
@@ -107,12 +107,12 @@ class CustomersController extends AbstractActionController {
   protected $customerRepository;
 
   public function __construct(CustomerRepositoryInterface $repository) {
-    $this -> $customerRepository = $repository;
+    $this->$customerRepository = $repository;
   }
 
   public function indexAction() {
     return [
-      'users' => $this -> customerRepository -> getAll();
+      'users' => $this->customerRepository->getAll();
     ];
   }
 }

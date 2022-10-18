@@ -14,6 +14,6 @@ class GlobalVariableSideEffectLisk
 
 
 $obj = new GlobalVariableSideEffectLisk;
-print_r($obj -> conf());
+print_r($obj->conf());
 
  ?>

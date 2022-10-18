@@ -5,7 +5,7 @@ require "AppleProduct.php";
 require "ProductFactory.php";
 
 $fac = new ProductFactory;
-$pro = $fac -> create();
-$pro -> name();
+$pro = $fac->create();
+$pro->name();
 
  ?>

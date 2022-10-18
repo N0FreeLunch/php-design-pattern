@@ -6,5 +6,5 @@ $korean = new korean;
 
 $obj = new Hello($korean);
 
-echo $obj -> greeting();
+echo $obj->greeting();
  ?>
