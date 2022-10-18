@@ -9,4 +9,4 @@ class Hello
     return $ko->text();
   }
 }
- ?>
+?>
