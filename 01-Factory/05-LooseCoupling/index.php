@@ -1,10 +1,10 @@
 <?php
-include "factory.php";
-include "hello.php";
-include "japanese.php";
+include "Factory.php";
+include "Hello.php";
+include "Japanese.php";
 
 $obj = new Hello;
 
 echo $obj->greeting();
 
- ?>
+?>

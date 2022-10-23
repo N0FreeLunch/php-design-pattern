@@ -7,4 +7,4 @@ class Factory
     return new Japanese();
   }
 }
- ?>
+?>
