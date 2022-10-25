@@ -10,4 +10,4 @@ echo $obj->greeting(Factory::ENGLISH)."\n";
 echo "<br>";
 echo $obj->greeting(Factory::JAPANESE)."\n";
 
- ?>
+?>
