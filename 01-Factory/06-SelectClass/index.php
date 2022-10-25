@@ -9,4 +9,5 @@ $obj = new Hello;
 echo $obj->greeting("en")."\n";
 echo "<br>";
 echo $obj->greeting("ja")."\n";
- ?>
+
+?>
